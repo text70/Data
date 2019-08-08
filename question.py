@@ -20,7 +20,10 @@ def robot(question):
     else:
         while question:
             click.echo("Try again")
-            break
+            return robot()
+        
+
+
 
 if __name__ == '__main__':
     robot()
